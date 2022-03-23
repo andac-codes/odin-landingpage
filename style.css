@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    margin: 0px;
+    border: 0px;
+    /* body'ye komple flex atıp sütun haline getirdik çünkü alt alta beş bölüm olacak */
+}
+
+a {
+    text-decoration: none;
+    /* linklerin altındaki çizgiyi sildik */
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    /* listenin yanındaki noktaları kaldırdık */
+    padding: 0px;
+    margin: 0px;
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links ul {
+    gap: 20px;
+    /* descendant combinator ile header-links altındaki ul elementlerinin arasını açtım */
+    font-size: 18px;
+}
+
+.head2 {
+    display: flex;
+    padding: 80px 0px;
+    justify-content: space-between;
+}
+
+.head2left h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.head2left p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.head2left button {
+    background-color: #3882f6;
+    color: white;
+    padding: 5px 25px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.head2right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: gray;
+    padding: 0px 300px;
+}
+
+.head-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    padding-top: 20px;
+    background-color: #1F2937;
+}
+
+.head-main a {
+    color: #e5e7eb;
+}
+
+.headerlogo {
+    font-size: 24px;
+    color: #f9faf8;
+}
